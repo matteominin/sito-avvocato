@@ -49,3 +49,28 @@ $purple: #7e3e98;
     }
   }
 }
+@media (max-width: 1000px) {
+  .footer {
+    &__container {
+      flex-direction: column;
+      .contatti {
+        margin-left: 0;
+        .item {
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .row {
+        height: 3px;
+        width: 80vw;
+        margin: auto;
+        margin-top: 30px;
+      }
+      .mappa {
+        width: 90vw;
+        margin: 40px auto;
+        height: 400px;
+      }
+    }
+  }
+}

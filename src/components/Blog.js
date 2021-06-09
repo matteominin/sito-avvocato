@@ -13,7 +13,7 @@ class Blog extends React.Component {
     }
 
     componentDidMount(){
-        axios.get('http://localhost:5000/articles')   //https://pure-ravine-53645.herokuapp.com/articles
+        axios.get('https://pure-ravine-53645.herokuapp.com/articles')   //https://pure-ravine-53645.herokuapp.com/articles
             .then(res => this.setState({articles: res.data}))
             .catch(err => console.log('Error: ' + err))
     }

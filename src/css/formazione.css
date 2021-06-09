@@ -22,6 +22,10 @@
   width: 20%;
 }
 
+.formazione__table .mobile {
+  display: none;
+}
+
 .formazione__table__title {
   color: #7e3e98;
   font-weight: 600;
@@ -35,6 +39,10 @@
 
 .formazione__table .formazione__item :last-child {
   padding: 10px 0;
+}
+
+.formazione__tableMobile {
+  display: none;
 }
 
 button {
@@ -51,5 +59,53 @@ button {
           transform: translateX(-50%);
   margin-bottom: 40px;
   cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+  .formazione__table {
+    display: none;
+  }
+  .formazione__tableMobile {
+    display: block;
+    width: 85%;
+    margin: auto;
+  }
+  .formazione__tableMobile thead tr td {
+    width: 90vw;
+    color: #7e3e98;
+    font-weight: 600;
+    padding-left: 40px;
+    border-bottom: 3px solid #7e3e98;
+  }
+  .formazione__tableMobile tbody .formazione__item {
+    display: none;
+  }
+  .formazione__tableMobile tbody .mobile td {
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #cec8d0;
+  }
+  .formazione__tableMobile tbody .mobile td span {
+    width: 100%;
+    margin-right: 20px;
+    color: #7e3e98;
+    font-weight: 600;
+  }
+  .formazione__tableMobile tbody .mobile td p {
+    font-size: 13px;
+  }
+  button {
+    margin-top: 0px;
+  }
 }
 /*# sourceMappingURL=formazione.css.map */

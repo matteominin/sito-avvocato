@@ -6,8 +6,8 @@ $purple: #7e3e98;
     margin: auto;
     max-width: 1600px;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-gap: 20px 0px;
+    grid-template-areas: "elem1 elem2 elem3" "elem4 elem5 elem6" "elem7 cta cta";
+    grid-gap: 15px 0px;
     padding-bottom: 40px;
     border-bottom: 3px solid $purple;
     .grid__cta {
@@ -37,6 +37,55 @@ $purple: #7e3e98;
         color: rebeccapurple;
         font-size: 14px;
         font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .esperto {
+    .grid {
+      grid-template-areas:
+        "elem1 elem2"
+        "elem3 elem4"
+        "elem5 elem6"
+        "elem7 null"
+        "cta cta";
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .esperto {
+    .grid {
+      grid-template-areas: "elem1" "elem2" "elem3" "elem4" "elem5" "elem6" "elem7" "cta";
+      .espertoCard {
+        max-width: 450px;
+        width: 90%;
+        .text {
+          p {
+            font-size: 14px;
+          }
+          h3 {
+            font-size: 18px;
+            padding-bottom: 15px;
+          }
+        }
+      }
+      .opacity {
+        width: 100%;
+      }
+      .grid__cta {
+        p {
+          font-size: 12px;
+        }
+        .preventivo {
+          font-size: 10px;
+          width: 100%;
+          a {
+            font-size: 12px;
+          }
+        }
       }
     }
   }

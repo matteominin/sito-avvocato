@@ -23,4 +23,30 @@
   margin-top: 50px;
   text-decoration: none;
 }
+
+@media (max-width: 1000px) {
+  .blog a {
+    font-size: 14px;
+  }
+  .blog :first-child div {
+    margin-top: -10px;
+  }
+  .blog .articleCard__imgContainer {
+    display: none;
+  }
+  .blog .articleCard__row {
+    display: none;
+  }
+  .blog .articleCard__text a {
+    max-width: 150px;
+    min-width: 100px;
+    width: 30%;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+  }
+  .blog .articleCard__text p {
+    font-size: 13px;
+  }
+}
 /*# sourceMappingURL=blog.css.map */

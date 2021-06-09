@@ -4,9 +4,8 @@
   max-width: 1600px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33.33% 33.33% 33.33%;
-      grid-template-columns: 33.33% 33.33% 33.33%;
-  grid-gap: 20px 0px;
+      grid-template-areas: "elem1 elem2 elem3" "elem4 elem5 elem6" "elem7 cta cta";
+  grid-gap: 15px 0px;
   padding-bottom: 40px;
   border-bottom: 3px solid #7e3e98;
 }
@@ -44,5 +43,41 @@
   color: rebeccapurple;
   font-size: 14px;
   font-weight: 600;
+}
+
+@media (max-width: 1250px) {
+  .esperto .grid {
+        grid-template-areas: "elem1 elem2" "elem3 elem4" "elem5 elem6" "elem7 null" "cta cta";
+  }
+}
+
+@media (max-width: 850px) {
+  .esperto .grid {
+        grid-template-areas: "elem1" "elem2" "elem3" "elem4" "elem5" "elem6" "elem7" "cta";
+  }
+  .esperto .grid .espertoCard {
+    max-width: 450px;
+    width: 90%;
+  }
+  .esperto .grid .espertoCard .text p {
+    font-size: 14px;
+  }
+  .esperto .grid .espertoCard .text h3 {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  .esperto .grid .opacity {
+    width: 100%;
+  }
+  .esperto .grid .grid__cta p {
+    font-size: 12px;
+  }
+  .esperto .grid .grid__cta .preventivo {
+    font-size: 10px;
+    width: 100%;
+  }
+  .esperto .grid .grid__cta .preventivo a {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=esperto.css.map */

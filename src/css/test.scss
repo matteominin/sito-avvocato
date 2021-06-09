@@ -181,6 +181,7 @@ $purple: #7e3e98;
     }
 
     #menuToggle input:checked ~ ul {
+      width: 200vw;
       transform: none;
     }
   }

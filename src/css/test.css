@@ -200,6 +200,7 @@
     font-size: 22px;
   }
   .header__mobile #menuToggle input:checked ~ ul {
+    width: 200vw;
     -webkit-transform: none;
             transform: none;
   }

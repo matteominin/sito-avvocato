@@ -22,3 +22,35 @@ $purple: #7e3e98;
     text-decoration: none;
   }
 }
+
+@media (max-width: 1000px) {
+  .blog {
+    a {
+      font-size: 14px;
+    }
+    :first-child div {
+      margin-top: -10px;
+    }
+    .articleCard {
+      &__imgContainer {
+        display: none;
+      }
+      &__row {
+        display: none;
+      }
+      &__text {
+        a {
+          max-width: 150px;
+          min-width: 100px;
+          width: 30%;
+          text-align: center;
+          margin-top: 25px;
+          font-size: 13px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

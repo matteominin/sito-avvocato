@@ -27,3 +27,9 @@ h2 {
 p {
   font-weight: 400;
 }
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 20px;
+  }
+}

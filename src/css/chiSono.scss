@@ -35,3 +35,32 @@ $purple: #7e3e98;
     }
   }
 }
+
+@media (max-width: 945px) {
+  .chiSono {
+    &__intro {
+      flex-direction: column-reverse;
+      margin-top: 50px;
+      img {
+        object-fit: contain;
+        width: 80%;
+        margin: auto;
+      }
+      &__text {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding-right: 0;
+        h3 {
+          font-size: 23px;
+        }
+        p {
+          font-size: 12px;
+          padding-right: 0;
+          width: 80%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

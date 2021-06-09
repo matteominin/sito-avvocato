@@ -17,7 +17,7 @@ class Formazione extends React.Component {
     }
 
     componentDidMount(){
-        axios.get('http://localhost:5000/corsi/')    //https://pure-ravine-53645.herokuapp.com/corsi/1
+        axios.get('https://pure-ravine-53645.herokuapp.com/corsi/')    //https://pure-ravine-53645.herokuapp.com/corsi/1
         .then(res => this.setState({
             corsi: res.data[0],
             Ncorsi: 1,
@@ -58,6 +58,16 @@ class Formazione extends React.Component {
                         }}/>) : <tr><td>Errore</td></tr>}
                     </tbody>
 
+                </table>
+                <table className="formazione__tableMobile">
+
+                        <tbody>
+                            {this.state.corsi.length > 0 ? this.state.corsi.slice(0, this.state.Ncorsi).map(elem => <FormazioneCard key={elem._id} data={{
+                                title: elem.title,
+                                text: elem.text,
+                                date: this.convertiData(elem.date)
+                                }}/>) : <tr><td>Errore</td></tr>}
+                        </tbody>
                 </table>
                 {this.state.count > this.state.Ncorsi ? <button onClick={() => this.loadMore()}>Carica altro...</button> : null}
             </div>

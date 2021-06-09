@@ -40,4 +40,35 @@
      object-fit: cover;
   width: 400px;
 }
+
+@media (max-width: 945px) {
+  .chiSono__intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+  .chiSono__intro img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 80%;
+    margin: auto;
+  }
+  .chiSono__intro__text {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-right: 0;
+  }
+  .chiSono__intro__text h3 {
+    font-size: 23px;
+  }
+  .chiSono__intro__text p {
+    font-size: 12px;
+    padding-right: 0;
+    width: 80%;
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=chiSono.css.map */

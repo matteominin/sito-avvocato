@@ -19,6 +19,9 @@ $purple: #7e3e98;
         width: 20%;
       }
     }
+    .mobile {
+      display: none;
+    }
     &__title {
       color: $purple;
       font-weight: 600;
@@ -31,6 +34,9 @@ $purple: #7e3e98;
         padding: 10px 0;
       }
     }
+  }
+  &__tableMobile {
+    display: none;
   }
 }
 
@@ -47,4 +53,56 @@ button {
   transform: translateX(-50%);
   margin-bottom: 40px;
   cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+  .formazione {
+    &__table {
+      display: none;
+    }
+
+    &__tableMobile {
+      display: block;
+      width: 85%;
+      margin: auto;
+      thead {
+        tr {
+          td {
+            width: 90vw;
+            color: $purple;
+            font-weight: 600;
+            padding-left: 40px;
+            border-bottom: 3px solid $purple;
+          }
+        }
+      }
+      tbody {
+        .formazione__item {
+          display: none;
+        }
+        .mobile {
+          td {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #cec8d0;
+            span {
+              width: 100%;
+              margin-right: 20px;
+              color: $purple;
+              font-weight: 600;
+            }
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  button {
+    margin-top: 0px;
+  }
 }

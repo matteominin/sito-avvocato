@@ -1,0 +1,43 @@
+.chiSono__intro {
+  max-width: 1600px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+  padding-bottom: 40px;
+  border-bottom: 3px solid #7e3e98;
+}
+
+.chiSono__intro__text {
+  margin-top: 20px;
+  width: 40%;
+  padding-right: 60px;
+}
+
+.chiSono__intro__text h3 {
+  color: #7e3e98;
+  font-size: 24px;
+}
+
+.chiSono__intro__text p {
+  margin: 0;
+  max-width: 450px;
+  padding-right: 30px;
+  line-height: 1.8;
+  /* span {
+          color: $purple;
+          font-weight: 600;
+          font-size: 17px;
+        } */
+}
+
+.chiSono__intro img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 400px;
+}
+/*# sourceMappingURL=chiSono.css.map */

@@ -1,0 +1,48 @@
+.esperto .grid {
+  padding-top: 20px;
+  margin: auto;
+  max-width: 1600px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33.33% 33.33% 33.33%;
+      grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-gap: 20px 0px;
+  padding-bottom: 40px;
+  border-bottom: 3px solid #7e3e98;
+}
+
+.esperto .grid .grid__cta {
+  text-align: center;
+  margin: auto;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  width: 70%;
+}
+
+.esperto .grid .grid__cta p {
+  margin-bottom: 35px;
+  font-size: 16px;
+}
+
+.esperto .grid .grid__cta .contatti {
+  text-decoration: none;
+  background-color: #7e3e98;
+  color: white;
+  padding: 10px 30px;
+}
+
+.esperto .grid .grid__cta .preventivo {
+  margin: auto;
+  width: 70%;
+  margin-top: 30px;
+  color: rebeccapurple;
+  font-size: 13px;
+}
+
+.esperto .grid .grid__cta .preventivoFile {
+  color: rebeccapurple;
+  font-size: 14px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=esperto.css.map */

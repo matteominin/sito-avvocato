@@ -1,0 +1,55 @@
+.formazione {
+  max-width: 1600px;
+}
+
+.formazione h2 {
+  margin-bottom: 40px;
+}
+
+.formazione__table {
+  max-width: 1350px;
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.formazione__table tr :first-child {
+  width: 15%;
+  padding-left: 15px;
+}
+
+.formazione__table tr :nth-child(2) {
+  width: 20%;
+}
+
+.formazione__table__title {
+  color: #7e3e98;
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: 2px solid #7e3e98;
+}
+
+.formazione__table .formazione__item {
+  border-bottom: 2px solid #cec8d0;
+}
+
+.formazione__table .formazione__item :last-child {
+  padding: 10px 0;
+}
+
+button {
+  border: none;
+  color: white;
+  font-weight: 600;
+  background: none;
+  color: #7e3e98;
+  text-decoration: underline;
+  margin-top: 20px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=formazione.css.map */

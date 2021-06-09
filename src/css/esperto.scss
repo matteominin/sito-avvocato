@@ -1,0 +1,43 @@
+$purple: #7e3e98;
+
+.esperto {
+  .grid {
+    padding-top: 20px;
+    margin: auto;
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-gap: 20px 0px;
+    padding-bottom: 40px;
+    border-bottom: 3px solid $purple;
+    .grid__cta {
+      text-align: center;
+      margin: auto;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      width: 70%;
+      p {
+        margin-bottom: 35px;
+        font-size: 16px;
+      }
+      .contatti {
+        text-decoration: none;
+        background-color: $purple;
+        color: white;
+        padding: 10px 30px;
+      }
+      .preventivo {
+        margin: auto;
+        width: 70%;
+        margin-top: 30px;
+        color: rebeccapurple;
+        font-size: 13px;
+      }
+      .preventivoFile {
+        color: rebeccapurple;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+}

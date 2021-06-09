@@ -1,0 +1,45 @@
+.espertoCard {
+  width: 400px;
+  height: 250px;
+  position: relative;
+  margin: auto;
+}
+
+.espertoCard img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.espertoCard .opacity {
+  position: absolute;
+  z-index: 1;
+  background: #00000096;
+  height: 250px;
+  width: 400px;
+  top: 0;
+}
+
+.espertoCard .text {
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+}
+
+.espertoCard .text h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #d5a444;
+  margin-top: 25px;
+}
+
+.espertoCard .text p {
+  color: white;
+  font-weight: 200;
+  line-height: 1.5;
+  padding: 0 20px;
+  margin-top: -10px;
+}
+/*# sourceMappingURL=espertoCard.css.map */

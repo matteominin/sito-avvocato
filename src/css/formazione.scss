@@ -1,0 +1,50 @@
+$purple: #7e3e98;
+
+.formazione {
+  max-width: 1600px;
+  h2 {
+    margin-bottom: 40px;
+  }
+  &__table {
+    max-width: 1350px;
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    tr {
+      :first-child {
+        width: 15%;
+        padding-left: 15px;
+      }
+      :nth-child(2) {
+        width: 20%;
+      }
+    }
+    &__title {
+      color: $purple;
+      font-weight: 600;
+      font-size: 18px;
+      border-bottom: 2px solid $purple;
+    }
+    .formazione__item {
+      border-bottom: 2px solid #cec8d0;
+      :last-child {
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+button {
+  border: none;
+  color: white;
+  font-weight: 600;
+  background: none;
+  color: $purple;
+  text-decoration: underline;
+  margin-top: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 40px;
+  cursor: pointer;
+}

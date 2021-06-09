@@ -1,0 +1,53 @@
+$purple: #7e3e98;
+
+.articleCard {
+  padding-top: 60px;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  &__imgContainer {
+    height: 200px;
+    width: 700px;
+    img {
+      margin: auto;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__row {
+    background-color: $purple;
+    height: 200px;
+    width: 12px;
+    margin: 0 15px;
+  }
+  &__text {
+    h3 {
+      color: $purple;
+      font-size: 20px;
+      margin: 0;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      span {
+        font-size: 13px;
+        color: #000;
+        font-weight: 500;
+        float: right;
+        margin-right: 25px;
+        margin-top: 4px;
+      }
+    }
+    p {
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      background: $purple;
+      float: right;
+      margin-right: 15px;
+      padding: 10px 30px;
+      margin-top: 40px;
+    }
+  }
+}

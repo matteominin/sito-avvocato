@@ -1,0 +1,24 @@
+$purple: #7e3e98;
+
+.blog {
+  max-width: 1600px;
+  margin: auto;
+  padding-bottom: 40px;
+  border-bottom: 3px solid $purple;
+  :first-child div {
+    margin-top: 20px;
+  }
+  .link {
+    background-color: $purple;
+    color: white;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    text-decoration: none;
+  }
+}

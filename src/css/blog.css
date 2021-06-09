@@ -1,0 +1,26 @@
+.blog {
+  max-width: 1600px;
+  margin: auto;
+  padding-bottom: 40px;
+  border-bottom: 3px solid #7e3e98;
+}
+
+.blog :first-child div {
+  margin-top: 20px;
+}
+
+.blog .link {
+  background-color: #7e3e98;
+  color: white;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  width: 250px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 50px;
+  text-decoration: none;
+}
+/*# sourceMappingURL=blog.css.map */

@@ -64,8 +64,8 @@
   .intro__carousel {
     width: 100%;
     height: auto;
-    -webkit-filter: brightness(24%);
-            filter: brightness(24%);
+    -webkit-filter: brightness(30%);
+            filter: brightness(30%);
   }
 }
 
@@ -74,18 +74,13 @@
     margin-top: 60px;
     position: relative;
   }
+  .intro__text {
+    width: 100%;
+    -webkit-transform: translateY(-70%);
+            transform: translateY(-70%);
+  }
   .intro__text p {
     display: none;
-  }
-  .intro__text h1 {
-    position: relative;
-    left: 50%;
-    -webkit-transform: translateX(-27%);
-            transform: translateX(-27%);
-    font-size: 3.2vw;
-  }
-  .intro__text h1 span {
-    font-size: 4vw;
   }
 }
 /*# sourceMappingURL=intro.css.map */

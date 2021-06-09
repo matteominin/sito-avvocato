@@ -52,7 +52,7 @@ $purple: #7e3e98;
     &__carousel {
       width: 100%;
       height: auto;
-      filter: brightness(24%);
+      filter: brightness(30%);
     }
   }
 }
@@ -62,17 +62,10 @@ $purple: #7e3e98;
     margin-top: 60px;
     position: relative;
     &__text {
+      width: 100%;
+      transform: translateY(-70%);
       p {
         display: none;
-      }
-      h1 {
-        position: relative;
-        left: 50%;
-        transform: translateX(-27%);
-        font-size: 3.2vw;
-        span {
-          font-size: 4vw;
-        }
       }
     }
   }

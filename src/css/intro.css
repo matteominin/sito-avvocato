@@ -39,7 +39,7 @@
      object-fit: cover;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1200px) {
   .intro {
     padding-bottom: 0 !important;
   }
@@ -79,8 +79,15 @@
     -webkit-transform: translateY(-70%);
             transform: translateY(-70%);
   }
+  .intro__text h1 {
+    color: #9c4dbb;
+  }
   .intro__text p {
     display: none;
+  }
+  __carousel {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
   }
 }
 /*# sourceMappingURL=intro.css.map */

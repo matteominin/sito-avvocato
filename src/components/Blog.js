@@ -9,13 +9,31 @@ class Blog extends React.Component {
 
     constructor(props){
         super(props)
-        this.state = {articles: []}
+        this.state = {
+            articles: []
+        }
+        
+        this.errorHandler = this.errorHandler.bind(this)
+    }
+
+    errorHandler(){
+        for (let i = 0; i < 5; i++) {
+            setTimeout(() => {
+                if(this.state.articles.length <= 0){
+                    axios.get('https://avvocatoo.herokuapp.com/articles')
+                        .then(res => {this.setState({articles: res.data})})
+                }
+            },1000)   
+        }
     }
 
     componentDidMount(){
-        axios.get('https://pure-ravine-53645.herokuapp.com/articles')   //https://pure-ravine-53645.herokuapp.com/articles
+        axios.get('https://avvocatoo.herokuapp.com/articles')
             .then(res => this.setState({articles: res.data}))
-            .catch(err => console.log('Error: ' + err))
+            .catch(err => {
+                console.log('Error: ' + err);
+                this.errorHandler();
+            })
     }
 
     render(){

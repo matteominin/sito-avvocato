@@ -29,7 +29,7 @@ $purple: #7e3e98;
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1200px) {
   .intro {
     padding-bottom: 0 !important;
     &__text {
@@ -64,9 +64,15 @@ $purple: #7e3e98;
     &__text {
       width: 100%;
       transform: translateY(-70%);
+      h1 {
+        color: #9c4dbb;
+      }
       p {
         display: none;
       }
     }
+  }
+  &__carousel {
+    filter: brightness(50%);
   }
 }

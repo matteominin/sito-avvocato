@@ -6,51 +6,59 @@ $purple: #7e3e98;
     margin: auto;
     max-width: 1600px;
     display: grid;
+
     grid-template-areas: "elem1 elem2 elem3" "elem4 elem5 elem6" "elem7 cta cta";
     grid-gap: 15px 0px;
     padding-bottom: 40px;
     border-bottom: 3px solid $purple;
-    .grid__cta {
-      text-align: center;
+  }
+  .grid__cta {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 55%;
+    max-width: 805px;
+    bottom: 270px;
+    right: -210px;
+    p {
+      margin-bottom: 35px;
+      font-size: 16px;
+    }
+    .contatti {
+      text-decoration: none;
+      background-color: $purple;
+      color: white;
+      padding: 10px 30px;
+    }
+    .preventivo {
       margin: auto;
-      grid-column-start: 2;
-      grid-column-end: 4;
       width: 70%;
-      p {
-        margin-bottom: 35px;
-        font-size: 16px;
-      }
-      .contatti {
-        text-decoration: none;
-        background-color: $purple;
-        color: white;
-        padding: 10px 30px;
-      }
-      .preventivo {
-        margin: auto;
-        width: 70%;
-        margin-top: 30px;
-        color: rebeccapurple;
-        font-size: 13px;
-      }
-      .preventivoFile {
-        color: rebeccapurple;
-        font-size: 14px;
-        font-weight: 600;
-      }
+      margin-top: 30px;
+      color: rebeccapurple;
+      font-size: 13px;
+    }
+    .preventivoFile {
+      color: rebeccapurple;
+      font-size: 14px;
+      font-weight: 600;
     }
   }
 }
 
 @media (max-width: 1250px) {
   .esperto {
+    margin-bottom: 60px;
     .grid {
+      border: none;
       grid-template-areas:
         "elem1 elem2"
         "elem3 elem4"
         "elem5 elem6"
         "elem7 null"
         "cta cta";
+    }
+    .grid__cta {
+      position: unset;
     }
   }
 }
@@ -64,7 +72,9 @@ $purple: #7e3e98;
         width: 90%;
         .text {
           p {
-            font-size: 14px;
+            font-size: 13px;
+            margin-top: -15px;
+            padding: 0 15px;
           }
           h3 {
             font-size: 18px;
@@ -75,18 +85,29 @@ $purple: #7e3e98;
       .opacity {
         width: 100%;
       }
-      .grid__cta {
-        p {
+    }
+    .grid__cta {
+      p {
+        font-size: 12px;
+      }
+      a {
+        font-size: 14px;
+      }
+      .preventivo {
+        font-size: 10px;
+        width: 100%;
+        a {
           font-size: 12px;
         }
-        .preventivo {
-          font-size: 10px;
-          width: 100%;
-          a {
-            font-size: 12px;
-          }
-        }
       }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .esperto {
+    .grid__cta {
+      width: 70%;
     }
   }
 }

@@ -1,6 +1,7 @@
 $purple: #7e3e98;
 
 .blog {
+  border-top: 3px solid $purple;
   max-width: 1600px;
   margin: auto;
   padding-bottom: 40px;
@@ -20,6 +21,13 @@ $purple: #7e3e98;
     transform: translateX(-50%);
     margin-top: 50px;
     text-decoration: none;
+  }
+}
+
+@media (min-width: 1250px) {
+  .blog {
+    border-top: none;
+    margin-top: -180px;
   }
 }
 

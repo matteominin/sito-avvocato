@@ -12,7 +12,8 @@ function ArticleCard(props) {
             <div className="articleCard__text">
                 <h3>{props.data.title.toUpperCase()}<span>{props.data.date}</span></h3>
                 <p>{props.data.text.substring(0,400) + '...'}</p>
-                <Link to="/da-cambiare">Leggi</Link>
+                {/* <Link to={"/blog/articoli/" + props.data.title.replace(/ /g, '-').replace(/'|,/g, '').toLowerCase()}>Leggi</Link> */}
+                <Link to={"/blog/articoli/" + props.data._id}>Leggi</Link>
             </div>
         </div>
     )

@@ -35,9 +35,24 @@ class home extends React.Component {
     }
 
     render(){
+
+        function convertiData(data){
+            const mesi = ['gen', 'feb', 'mar', 'apr', 'mag', 'giu', 'lug', 'ago', 'set', 'ott', 'nov', 'dic']
+            let arr = data.substring(0,10).split('-').reverse()
+            arr[1] = mesi[Number(arr[1] - 1)]
+            return arr.join(' ')
+        }
+
          return (
             <div className="blog home">
-                {this.state.articles.map(elem => {return <Cards data={elem} key={elem._id}/>})}
+                {this.state.articles.map(elem => {return <Cards key={elem._id} data={{
+                    img: elem.img,
+                    imgAlt: elem.imgAlt,
+                    title: elem.title,
+                    text: elem.text,
+                    date: convertiData(elem.date),
+                    _id: elem._id
+                }}/>})}
             </div>
         )   
     }

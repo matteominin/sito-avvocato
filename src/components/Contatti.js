@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/contatti.css'
 
 function Contatti() {
     return (

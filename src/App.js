@@ -21,6 +21,8 @@ import AdminArticolo from './components/admin/AdminArticolo'
 import Home from './components/blog/Home'
 import Article from './components/blog/Article'
 
+import Carousel from './components/Carousel'
+
 function App() {
   return (
     <Router>
